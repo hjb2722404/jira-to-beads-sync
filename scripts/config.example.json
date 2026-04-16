@@ -1,0 +1,33 @@
+{
+  "jira_url": "https://your-domain.atlassian.net",
+  "auth_type": "basic",
+  "auth": {
+    "username": "your-username",
+    "password": "your-password"
+  },
+  "project_dir": ".",
+  "sync": {
+    "default_jql": "project = PROJ AND status != Done",
+    "fields": ["summary", "description", "priority", "issuetype", "status", "assignee", "reporter", "created", "updated", "labels"],
+    "batch_size": 100
+  },
+  "mappings": {
+    "priority": {
+      "Highest": 0,
+      "High": 1,
+      "Medium": 2,
+      "Low": 3,
+      "Lowest": 4
+    },
+    "issue_type": {
+      "Bug": "bug",
+      "Story": "feature",
+      "Task": "task"
+    },
+    "status": {
+      "open": "To Do",
+      "in_progress": "In Progress",
+      "closed": "Done"
+    }
+  }
+}
