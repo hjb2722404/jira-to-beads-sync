@@ -1,6 +1,23 @@
 # JIRA to Beads Sync
 
-A Python script that syncs tasks from JIRA to [Beads](https://github.com/beads/beads) with support for images, attachments, and comments.
+A **Trae IDE Skill** and standalone Python script that syncs tasks from JIRA to [Beads](https://github.com/beads/beads) with support for images, attachments, and comments.
+
+## Two Ways to Use
+
+### As a Skill (Recommended for Trae IDE)
+
+This is a **Trae IDE Skill** for JIRA to Beads synchronization. When installed as a skill in Trae, you can simply say:
+- "从 JIRA 同步任务到 beads"
+- "Sync my JIRA tasks"
+- And more natural language commands
+
+### As a Standalone Script
+
+You can also run this script directly from the command line:
+
+```bash
+python scripts/jira_to_beads.py [options]
+```
 
 ## Features
 
@@ -23,9 +40,6 @@ A Python script that syncs tasks from JIRA to [Beads](https://github.com/beads/b
 # Clone the repository
 git clone https://github.com/hjb2722404/jira-to-beads-sync.git
 cd jira-to-beads-sync
-
-# Install Python dependencies (if any)
-pip install -r requirements.txt  # Not required for basic usage
 ```
 
 ## Configuration
@@ -70,7 +84,7 @@ Create a configuration file at `.claude/jira-config.json` in your project direct
 {"token": "..."}
 ```
 
-## Usage
+## Script Usage
 
 ```bash
 # Default usage (reads from .claude/jira-config.json)
@@ -118,7 +132,7 @@ q
 ## Issue Type Mapping
 
 | JIRA Type | Beads Type |
-|-----------|------------|
+|-----------|-----------|
 | Bug | bug |
 | Story | feature |
 | Task | task |

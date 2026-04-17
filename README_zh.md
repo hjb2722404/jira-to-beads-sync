@@ -1,6 +1,23 @@
 # JIRA to Beads Sync
 
-将 JIRA 任务同步到 [Beads](https://github.com/beads/beads) 的 Python 脚本，支持图片、附件和评论同步。
+一个 **Trae IDE Skill** 和独立的 Python 脚本，用于将 JIRA 任务同步到 [Beads](https://github.com/beads/beads)，支持图片、附件和评论。
+
+## 两种使用方式
+
+### 作为 Skill 使用（推荐用于 Trae IDE）
+
+这是一个用于 JIRA 到 Beads 同步的 **Trae IDE Skill**。当安装为 skill 后，你可以直接说：
+- "从 JIRA 同步任务到 beads"
+- "Sync my JIRA tasks"
+- 以及其他自然语言命令
+
+### 作为独立脚本使用
+
+你也可以直接从命令行运行此脚本：
+
+```bash
+python scripts/jira_to_beads.py [选项]
+```
 
 ## 功能特性
 
@@ -23,9 +40,6 @@
 # 克隆仓库
 git clone https://github.com/hjb2722404/jira-to-beads-sync.git
 cd jira-to-beads-sync
-
-# 安装 Python 依赖（如需要）
-pip install -r requirements.txt  # 基础使用时不需要
 ```
 
 ## 配置
@@ -70,7 +84,7 @@ pip install -r requirements.txt  # 基础使用时不需要
 {"token": "..."}
 ```
 
-## 使用方法
+## 脚本使用方法
 
 ```bash
 # 默认用法（从 .claude/jira-config.json 读取配置）
