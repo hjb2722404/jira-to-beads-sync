@@ -1,14 +1,15 @@
 # JIRA to Beads Sync
 
-A **Trae IDE Skill** and standalone Python script that syncs tasks from JIRA to [Beads](https://github.com/beads/beads) with support for images, attachments, and comments.
+An **AI Agent Skill** and standalone Python script that syncs tasks from JIRA to [Beads](https://github.com/beads/beads) with support for images, attachments, and comments.
 
 ## Two Ways to Use
 
-### As a Skill (Recommended for Trae IDE)
+### As an Agent Skill
 
-This is a **Trae IDE Skill** for JIRA to Beads synchronization. When installed as a skill in Trae, you can simply say:
+This is an **AI Agent Skill** for JIRA to Beads synchronization. When installed as a skill in an AI coding assistant, you can use natural language commands like:
 - "从 JIRA 同步任务到 beads"
 - "Sync my JIRA tasks"
+- "从 JIRA 拉取任务"
 - And more natural language commands
 
 ### As a Standalone Script
@@ -132,7 +133,7 @@ q
 ## Issue Type Mapping
 
 | JIRA Type | Beads Type |
-|-----------|-----------|
+|-----------|------------|
 | Bug | bug |
 | Story | feature |
 | Task | task |
